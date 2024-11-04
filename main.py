@@ -4,7 +4,7 @@ from optimalTouristPath import optimalTouristPath
 
 ISLAND_GRAPH = {
     'Hawaii': {
-        'routes': {'Tahiti': 5, 'Fiji': 10},
+        'routes': {'Tahiti': 5, 'Fiji': 10, 'South America': 15},
         'population': 50000,
         'resources': {
             'kahelelani_shells': 20,
@@ -19,7 +19,7 @@ ISLAND_GRAPH = {
         'last_visit_by_leader': 0
     },
     'Tahiti': {
-        'routes': {'Hawaii': 5, 'Fiji': 4, 'Samoa': 3},
+        'routes': {'Hawaii': 5, 'Fiji': 4, 'Samoa': 3, 'South America': 18, 'South Eastern Asia': 221},
         'population': 70000,
         'resources': {
             'kahelelani_shells': 5,
@@ -35,7 +35,7 @@ ISLAND_GRAPH = {
         'last_visit_by_leader': 0
     },
     'Fiji': {
-        'routes': {'Hawaii': 10, 'Samoa': 2, 'Tahiti': 4},
+        'routes': {'Hawaii': 10, 'Samoa': 2, 'Tahiti': 4, 'South Eastern Asia': 20},
         'population': 60000,
         'resources': {
             'kahelelani_shells': 2,
@@ -121,12 +121,14 @@ def display_menu():
 
 def run_optimal_resource_path():
     resource = input("Enter the resource to distribute (e.g., kahelelani_shells): ")
-    print("\nRunning optimalResourcePath with resource:", resource)
-    path = optimalResourcePath(ISLAND_GRAPH, resource)
+    canoe_capacity = int(input("Enter the canoe capacity for resource distribution (e.g., 50): "))
+    print("\nRunning optimalResourcePath with resource:", resource, "and canoe capacity:", canoe_capacity)
+    
+    path = optimalResourcePath(ISLAND_GRAPH, resource, canoe_capacity)
     print("Distribution path:", path)
     
     print("\nUsing the path to update the graph with useOptimalResourcePath...")
-    updated_graph = useOptimalResourcePath(ISLAND_GRAPH, path)
+    updated_graph = useOptimalResourcePath(ISLAND_GRAPH, path, resource)
     print("Updated Graph:", updated_graph)
 
 def run_optimal_leader_path():
