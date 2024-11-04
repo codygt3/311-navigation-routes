@@ -16,7 +16,7 @@ ISLAND_GRAPH = {
             'volcano_tour': 3,
             'surfing': 2
         },
-        'last_visit_by_leader': 0
+        'last_visit_by_leader': 1
     },
     'Tahiti': {
         'routes': {'Hawaii': 5, 'Fiji': 4, 'Samoa': 3, 'South America': 18, 'South Eastern Asia': 221},
@@ -32,7 +32,7 @@ ISLAND_GRAPH = {
             'pearl_diving': 4,
             'traditional_dance': 2
         },
-        'last_visit_by_leader': 0
+        'last_visit_by_leader': 2
     },
     'Fiji': {
         'routes': {'Hawaii': 10, 'Samoa': 2, 'Tahiti': 4, 'South Eastern Asia': 20},
@@ -47,7 +47,7 @@ ISLAND_GRAPH = {
             'coral_reef_tour': 3,
             'fire_dancing': 2
         },
-        'last_visit_by_leader': 0
+        'last_visit_by_leader': 3
     },
     'Samoa': {
         'routes': {'Tahiti': 3, 'Fiji': 2, 'Cook Islands': 6},
@@ -63,7 +63,7 @@ ISLAND_GRAPH = {
             'canoe_race': 3,
             'tapa_making': 2
         },
-        'last_visit_by_leader': 0
+        'last_visit_by_leader': 4
     },
     'Cook Islands': {
         'routes': {'Samoa': 6, 'Tahiti': 7},
@@ -79,7 +79,7 @@ ISLAND_GRAPH = {
             'shell_collecting': 2,
             'traditional_feast': 3
         },
-        'last_visit_by_leader': 0
+        'last_visit_by_leader': 5
     },
     'Niʻihau': {
         'routes': {'Hawaii': 4},
@@ -90,7 +90,7 @@ ISLAND_GRAPH = {
         'experiences': {
             'lei_making': 2
         },
-        'last_visit_by_leader': 0
+        'last_visit_by_leader': 6
     },
     'South America': {
         'routes': {'Hawaii': 15, 'Tahiti': 18},
@@ -98,7 +98,7 @@ ISLAND_GRAPH = {
         'resources': {
             'sweet_potatoes': 1000
         },
-        'last_visit_by_leader': 0
+        'last_visit_by_leader': 7
     },
     'South Eastern Asia': {
         'routes': {'Fiji': 20, 'Tahiti': 22},
@@ -106,7 +106,7 @@ ISLAND_GRAPH = {
         'resources': {
             'kalo': 2000
         },
-        'last_visit_by_leader': 0
+        'last_visit_by_leader': 8
     }
 }
 
