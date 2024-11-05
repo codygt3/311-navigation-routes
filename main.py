@@ -136,10 +136,6 @@ def run_optimal_leader_path():
     print("\nRunning optimalLeaderPath from island:", start_island)
     path = optimalLeaderPath(ISLAND_GRAPH, start_island)
     print("Leader's path:", path)
-    
-    print("\nUsing the path to update the graph with useOptimalLeaderPath...")
-    updated_graph = useOptimalLeaderPath(ISLAND_GRAPH, path)
-    print("Updated Graph:", updated_graph)
 
 def run_optimal_tourist_path():
     start_island = input("Enter the starting island for the tourist (e.g., Hawaii): ")

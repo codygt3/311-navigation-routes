@@ -78,7 +78,3 @@ def optimalLeaderPath(graph, start):
         visited_islands.add(island)
     
     return route  # Return the route as a list instead of a string
-
-#Using the path given, returns the resulting graph, which should update the last_visit_by_leader property of each island
-def useOptimalLeaderPath(graph, path):
-    return "graph"
