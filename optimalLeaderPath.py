@@ -47,7 +47,7 @@ def optimalLeaderPath(graph, start):
     # Initialize variables
     route = [start]
     current_location = start
-    visited_islands = set([start])  # Start island is already visited
+    visited_islands = set([start])
     
     # Create a list of islands sorted by priority
     # Higher population and higher last_visit_by_leader
@@ -77,4 +77,4 @@ def optimalLeaderPath(graph, start):
         current_location = island
         visited_islands.add(island)
     
-    return route  # Return the route as a list instead of a string
+    return route  # Return the route as a list
